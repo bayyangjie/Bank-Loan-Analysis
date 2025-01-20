@@ -1,16 +1,15 @@
 # Bank Loan Analysis 
 
-# In the repository
+## In the repository
 The following files are included in this repository:
 * Dashboard (bank_loan_analysis__73207.twbr)
 * SQL queries performed in the analysis (loan_analysis.sql)
 * Dataset (bank_loan_queried.xls)
 
-
 Explore the interactive dashboard on my Tableau Public profile: <br>
 https://public.tableau.com/app/profile/bay.yang.jie/viz/bank_loan_analysis_17373723293010/Summary
 
-# Background
+## Background
 Bank loans are a crucial financial tool that enables individuals and businesses to achieve their goals and manage financial needs. However, it's essential for borrowers to understand the terms, costs, and responsibilities associated with loans to make informed financial decisions.
 
 Banks collect loan data through various channels and processes, including:
@@ -25,7 +24,7 @@ Banks collect loan data through various channels and processes, including:
 
 **Third-party Data Sources**: Some banks may use external data sources, such as income verification services, to gather additional information about borrowers.
 
-# Reasons for analysing bank loan data
+## Reasons for analysing bank loan data
 
 **Risk Assessment**: One of the primary purposes of analysing loan data is to assess the risk associated with lending to a particular individual or business. Banks use data to evaluate the creditworthiness of borrowers, predict default probabilities, and determine interest rates and lending terms.
 
@@ -41,15 +40,13 @@ Banks collect loan data through various channels and processes, including:
 
 **Customer Retention**: Banks use data analysis to identify opportunities for retaining existing customers, such as offering loan refinancing options or additional financial products.
 
-# SQL querying
+## SQL 
 
 MySQL Workbench was the software used for writing the SQL queries.
 
-The SQL queries were also performed to help verify values obtained from the aggregated calculations in Tableau. Data cleaning was also performed to ensure consistency in the format of the date values. 
+The SQL queries were also performed to help verify values obtained from the aggregated calculations in Tableau. The data cleaning step mainly encompass modifying the structure of date-related values. There were varying formats of the date values in the variables namely 'next_payment_date', 'last_payment_date', 'last_credit_pull_date' and 'issue_date. The format of all the date values in those variables were converted into the SQL default date format (YYYY/MM/DD).
 
-There were varying formats of the date values in four date-related variables. The format of all the date values in those variables were then converted into the SQL default date format (YYYY/MM/DD).
-
-# Dashboards
+## Dashboards
 
 ## Dashboard #1 - Summary
 
