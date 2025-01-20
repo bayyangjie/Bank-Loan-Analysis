@@ -1,8 +1,13 @@
-# Bank Loan Dashboard
-
-This repository contains the Tableau Dashboard and related files for analyzing the Bank Loans of Customers. 
+# Bank Loan Analysis Dashboard
 
 <img src = "https://github.com/bayyangjie/Bank-Loan-Analysis/blob/main/images/dashboard%20image.png?raw=true" width="100%"/>
+
+The following files are included in this repository:
+* Dashboard (bank_loan_analysis__73207.twbr)
+* SQL queries performed in the analysis (loan_analysis.sql)
+* Dataset (bank_loan_queried.xls)
+
+<br>
 
 Explore the interactive dashboard on my Tableau Public profile: <br>
 https://public.tableau.com/app/profile/bay.yang.jie/viz/bank_loan_analysis_17373723293010/Summary
