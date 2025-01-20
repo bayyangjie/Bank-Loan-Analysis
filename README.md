@@ -1,3 +1,12 @@
+# Bank Loan Dashboard
+
+This repository contains the Tableau Dashboard and related files for analyzing the Bank Loans of Customers. 
+
+<img src = "https://github.com/bayyangjie/Bank-Loan-Analysis/blob/main/images/dashboard%20image.png?raw=true" width="100%"/>
+
+Explore the interactive dashboard on my Tableau Public profile: <br>
+https://public.tableau.com/app/profile/bay.yang.jie/viz/bank_loan_analysis_17373723293010/Summary
+
 # Background
 Bank loans are a crucial financial tool that enables individuals and businesses to achieve their goals and manage financial needs. However, it's essential for borrowers to understand the terms, costs, and responsibilities associated with loans to make informed financial decisions.
 
