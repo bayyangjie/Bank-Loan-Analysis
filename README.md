@@ -1,13 +1,11 @@
-# Bank Loan Analysis Dashboard
+# Bank Loan Analysis 
 
-<img src = "https://github.com/bayyangjie/Bank-Loan-Analysis/blob/main/images/dashboard%20image.png?raw=true" width="100%"/>
-
+# In the repository
 The following files are included in this repository:
 * Dashboard (bank_loan_analysis__73207.twbr)
 * SQL queries performed in the analysis (loan_analysis.sql)
 * Dataset (bank_loan_queried.xls)
 
-<br>
 
 Explore the interactive dashboard on my Tableau Public profile: <br>
 https://public.tableau.com/app/profile/bay.yang.jie/viz/bank_loan_analysis_17373723293010/Summary
@@ -55,6 +53,8 @@ There were varying formats of the date values in four date-related variables. Th
 
 ## Dashboard #1 - Summary
 
+<img src = "https://github.com/bayyangjie/Bank-Loan-Analysis/blob/main/images/Summary.png?raw=true" width="100%"/>
+
 ### Key Performance Indicators (KPIs) Requirements
 
 1. **Total Loan Applications**: Calculates the total number of loan applications received during a specified period. Additionally, it is essential to monitor the Month-to-Date (MTD) Loan Applications and track changes Month-over-Month (MoM).
@@ -98,6 +98,8 @@ In order to gain a comprehensive overview of the lending operations and monitor 
 
 ## Dashboard #2 - Overview
 
+<img src = "https://github.com/bayyangjie/Bank-Loan-Analysis/blob/main/images/Overview.png?raw=true" width="100%"/>
+
 The aim of this dashboard is to visually represent critical loan-related metrics and trends using a variety of chart types. These charts will provide a clear and insightful view of our lending operations, facilitating data-driven decision-making and enabling us to gain valuable insights into various loan parameters.
 
 1. Monthly Trends by Issue Date (Line Chart):
@@ -119,4 +121,7 @@ This bar chart provides a visual breakdown of loan metrics based on the stated p
 This tree map displays loan metrics categorized by different home ownership statuses providing a hierarchical view of how home ownership impacts loan applications and disbursements.
 
 ## Dashboard #3 - Details
+
+<img src = "https://github.com/bayyangjie/Bank-Loan-Analysis/blob/main/images/Details.png?raw=true" width="100%"/>
+
 The primary objective of the Details Dashboard is to provide a comprehensive and user-friendly interface for accessing vital loan data. It will serve as a one-stop solution for users seeking detailed insights into our loan portfolio, borrower profiles, and loan performance.
