@@ -26,7 +26,7 @@ Before: <br>
 
 After: <br>
 
-<img src="images/new date format.png" alt="New date format" width="100%">
+<img src="images/newdateformat.png" alt="New date format" width="100%">
 
 # Overview
 Overview of Dashboards created:
