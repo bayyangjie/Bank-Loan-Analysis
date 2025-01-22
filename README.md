@@ -1,6 +1,7 @@
-# Bank Loan Analysis 
+# Introduction
+Bank loans are a crucial financial tool that enables individuals and businesses to achieve their goals and manage financial needs. This Bank Loan Dashboard is designed to monitor and evaluate the bank's lending processes. It serves as a tool to enhance data-driven decision-making, allowing for strategic planning in the lending operations of the bank.
 
-## In the repository
+## Repository content
 The following files are included in this repository:
 * Dashboard (bank_loan_analysis__73207.twbr)
 * SQL queries performed in the analysis (loan_analysis.sql)
@@ -9,46 +10,32 @@ The following files are included in this repository:
 Explore the interactive dashboard on my Tableau Public profile: <br>
 https://public.tableau.com/app/profile/bay.yang.jie/viz/bank_loan_analysis_17373723293010/Summary
 
-## Background
-Bank loans are a crucial financial tool that enables individuals and businesses to achieve their goals and manage financial needs. However, it's essential for borrowers to understand the terms, costs, and responsibilities associated with loans to make informed financial decisions.
+## Implementation 
+The project involved loading the dataset from MS SQL into Tableau. The dashboards were created using Tableau's visualization tools, adhering to the requirements outlined in the problem statement and leveraging the data dictionary for accurate field usage
 
-Banks collect loan data through various channels and processes, including:
+Direct queries were ran against the MySQL database to fetch raw data. This data served as a benchmark to validate the data presented in the dashboards. Similarly, transformations in Tableau such as the aggregating, filtering were verified against the raw data queried using MySQL.
 
-**Loan Applications**: When individuals or businesses apply for loans, they submit detailed applications that include personal and financial information. This data is collected electronically or in paper form.
+Through these validation steps, the project ensured that the dashboards accurately represent the data and the insights derived are based on truthful and unaltered information. This rigorous validation process enhances the credibility of the dashboards and reinforces confidence in the data-driven decisions made using these tools.
 
-**Credit Reports**: Banks often access credit reports from credit bureaus when assessing a borrower's creditworthiness. These reports contain information about a person's credit history, existing loans, and payment behaviour.
+### Data Cleaning
+The main data cleaning step involved converting the format of the date variables to the SQL default date format (YYYY/MM/DD). The date values initially comprised of a mix of different date formats which can lead to errors when utilizing these fields espeically for time series analysis. Thus, the date format was aligned to use the default MySQL date format for easier interpretation.
 
-**Internal Records**: Banks maintain internal records of loan transactions, including disbursements, repayments, and loan status changes. These records are generated and stored in the bank's database.
+Before:
+<img src="images/Date format.png" alt="Date formats alteration" width="30%">
 
-**Online Portals**: Many banks offer online platforms where borrowers can apply for loans, make payments, and access account information. Data from these portals is collected and stored for analysis.
+After: 
+<img src="images/new date formats.png" alt="New date format" width="25%">
 
-**Third-party Data Sources**: Some banks may use external data sources, such as income verification services, to gather additional information about borrowers.
+# Overview
+Overview of Dashboards created:
+- Summary
+- Overview
+- Details
 
-## Reasons for analysing bank loan data
-
-**Risk Assessment**: One of the primary purposes of analysing loan data is to assess the risk associated with lending to a particular individual or business. Banks use data to evaluate the creditworthiness of borrowers, predict default probabilities, and determine interest rates and lending terms.
-
-**Decision-making**: Loan data analysis supports the decision-making process when evaluating loan applications. Banks use data-driven models and algorithms to make informed lending decisions, such as approving or denying loan requests.
-
-**Portfolio Management**: Banks manage portfolios of loans, including mortgages, personal loans, and business loans. Data analysis helps banks monitor the health of these portfolios, identify underperforming loans, and optimize loan terms and pricing.
-
-**Customer Insights**: Analysing loan data provides insights into customer behaviour, preferences, and needs. Banks can use these insights to tailor loan products and marketing strategies to specific customer segments.
-
-**Profitability Analysis**: Banks assess the profitability of their loan portfolios by analysing data related to interest income, loan origination costs, default rates, and collection efforts.
-
-**Credit Risk Management**: Banks continuously monitor and manage credit risk associated with their loans. Data analysis helps in setting risk management strategies, provisioning for potential losses, and stress testing loan portfolios.
-
-**Customer Retention**: Banks use data analysis to identify opportunities for retaining existing customers, such as offering loan refinancing options or additional financial products.
-
-## SQL 
-
-MySQL Workbench was the software used for writing the SQL queries.
-
-The SQL queries were also performed to help verify values obtained from the aggregated calculations in Tableau. The data cleaning step mainly encompass modifying the structure of date-related values. There were varying formats of the date values in the variables namely 'next_payment_date', 'last_payment_date', 'last_credit_pull_date' and 'issue_date. The format of all the date values in those variables were converted into the SQL default date format (YYYY/MM/DD).
-
-## Dashboards
+The report comprises of three dynamic dashboards namely the Summary, Overview and Details as shown above.  The dashboards conduct a deep dive into the bank's loan activities through analysis of various metrics for gaining a deeper understanding of the overall health of the bank's loan portfolio.
 
 ## Dashboard #1 - Summary
+The summary dashboard provides a snapshot of **crucial metrics** used in this analysis such as Total Loan Applications, Total Funded Amount, Total Amount Received, Average Interest Rate and Average Debt-to-Income Ratio (DTI). The performance of these metrics are measured on a Month-To-Date (MTD) and Month-On-Month (MoM) basis.
 
 <img src = "https://github.com/bayyangjie/Bank-Loan-Analysis/blob/main/images/Summary.png?raw=true" width="100%"/>
 
@@ -67,7 +54,7 @@ The SQL queries were also performed to help verify values obtained from the aggr
 
 ### Good Loan v Bad Loan KPI’s
 
-In order to evaluate the performance of all lending activities and assess the quality of the loan portfolio, we need to create a comprehensive report that distinguishes between 'Good Loans' and 'Bad Loans' based on specific loan status criteria
+In order to better evaluate the performance of lending activities and the quality of the loan portfolio, the data is further broken down to understand the performance of both Good and Bad Loans based on the metrics mentioned previously.
 
 #### Good Loan KPIs
 
@@ -94,6 +81,7 @@ In order to evaluate the performance of all lending activities and assess the qu
 In order to gain a comprehensive overview of the lending operations and monitor the performance of loans, we aim to create a grid view report categorized by 'Loan Status'. This report will serve as a valuable tool for analysing and understanding the key indicators associated with different loan statuses. By providing insights into metrics such as 'Total Loan Applications', 'Total Funded Amount', 'Total Amount Received', 'Month-to-Date (MTD) Funded Amount', 'MTD Amount Received', 'Average Interest Rate' and 'Average Debt-to-Income Ratio (DTI)', this grid view helps to drive data-driven decisions and assess the overall health of the loan portfolio.
 
 ## Dashboard #2 - Overview
+The Overview Dashboard aids in identifying trends, seasonal patterns and the distribution of loans across various categories like Employment lengths of borrowers, Loan purpose, Number of applications of each loan type and Home ownership types of borrowers.
 
 <img src = "https://github.com/bayyangjie/Bank-Loan-Analysis/blob/main/images/Overview.png?raw=true" width="100%"/>
 
@@ -118,7 +106,11 @@ This bar chart provides a visual breakdown of loan metrics based on the stated p
 This tree map displays loan metrics categorized by different home ownership statuses providing a hierarchical view of how home ownership impacts loan applications and disbursements.
 
 ## Dashboard #3 - Details
+The Details Dashboard offers a detailed view of the loan data, providing a comprehensive and user-friendly interface for accessing vital loan metrics, borrower profiles, and performance data.
 
 <img src = "https://github.com/bayyangjie/Bank-Loan-Analysis/blob/main/images/Details.png?raw=true" width="100%"/>
 
 The primary objective of the Details Dashboard is to provide a comprehensive and user-friendly interface for accessing vital loan data. It will serve as a one-stop solution for users seeking detailed insights into our loan portfolio, borrower profiles, and loan performance.
+
+# Conclusion
+With the inclusion of the robust data validation techniques employed in this analysis, the Bank Loan Dashboard would serve as a reliable and authoritative source for monitoring the bank’s loan activities and portfolio health. The project not only presents critical data through intuitive visualizations but also guarantees the precision of the information displayed, enabling the bank to make informed and assured strategic decisions.
