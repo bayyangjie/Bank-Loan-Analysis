@@ -21,10 +21,12 @@ Through these validation steps, the project ensured that the dashboards accurate
 The main data cleaning step involved converting the format of the date variables to the SQL default date format (YYYY/MM/DD). The date values initially comprised of a mix of different date formats which can lead to errors when utilizing these fields espeically for time series analysis. Thus, the date format was aligned to use the default MySQL date format for easier interpretation.
 
 Before: <br>
-<img src="images/Date format.png" alt="Date formats alteration" width="30%">
+
+<img src="images/Date format.png" alt="Date formats alteration" width="100%">
 
 After: <br>
-<img src="images/new date formats.png" alt="New date format" width="25%">
+
+<img src="images/new date format.png" alt="New date format" width="100%">
 
 # Overview
 Overview of Dashboards created:
